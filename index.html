@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photoredox Catalysis</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #202122;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #a2a9b1;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    nav {
+      width: 240px;
+      font-size: 0.95rem;
+      position: sticky;
+      top: 1.25rem;
+      align-self: flex-start;
+      background: transparent;
+    }
+    nav h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 0.4rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0645ad;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      background: #ffffff;
+      padding: 2rem;
+      border: 1px solid #a2a9b1;
+      min-width: 0;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section h2 {
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 0.25rem;
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+    h3 {
+      margin-bottom: 0.25rem;
+    }
+    .reference {
+      font-size: 0.95rem;
+    }
+    .reference li {
+      margin-bottom: 0.65rem;
+    }
+    sup a {
+      text-decoration: none;
+      color: #0645ad;
+    }
+    sup a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #54595d;
+      margin: 2rem 0;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Photoredox Catalysis</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h3>Contents</h3>
+      <ul>
+        <li><a href="#overview">1 Overview</a></li>
+        <li><a href="#background">2 Background</a></li>
+        <li><a href="#principles">3 Photophysical Principles</a></li>
+        <li><a href="#mechanisms">4 Mechanistic Pathways</a></li>
+        <li><a href="#catalysts">5 Classes of Photocatalysts</a></li>
+        <li><a href="#applications">6 Applications in Organic Synthesis</a></li>
+        <li><a href="#advantages">7 Advantages and Limitations</a></li>
+        <li><a href="#see-also">8 See also</a></li>
+        <li><a href="#references">9 References</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          Photoredox catalysis is a class of light-driven catalysis in which a photocatalyst absorbs visible light to access an excited state capable of mediating single-electron transfer (SET) or energy-transfer (EnT) processes. These photophysical events enable the controlled generation of radical intermediates under mild reaction conditions, providing reactivity that complements or bypasses traditional two-electron ionic pathways. Because it allows difficult bond formations to proceed without harsh reagents, high temperatures, or stoichiometric metal reductants, photoredox catalysis has become a central platform in modern organic synthesis. Its applications span carbon–carbon bond formation, C–H functionalization, and dual catalytic strategies such as metallaphotoredox cross-coupling, with significant impact in pharmaceutical development, materials science, and polymer chemistry.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-6">[6]</a></sup>
+</p>
+        </p>
+      </section>
+
+      <section id="background">
+        <h2>Background</h2>
+        <p>
+          Photoredox catalysis had its first conceptual roots during early studies of photochemistry in the mid-20th century. Foundational work by Dieter Rehm and Alfred Weller established the thermodynamic framework of photoinduced electron transfer, which first demonstrated that photoexcitation could dramatically alter the oxidative or reductive properties of a molecule. These early studies opened the door to understanding how light could be harnessed to promote electron transfer reactions under conditions previously thought to be inaccessible through purely thermal pathways.<sup><a href="#ref-1">[1]</a></sup> Despite this early theoretical framework, the application of photochemistry to organic synthesis remained limited for much of the late 20th century following Rehm and Weller’s research. Traditional photochemical reactions typically relied on ultraviolet light, which often caused unselective excitation and substrate degradation. Resultingly, photochemical methods were largely viewed as a specialized technique, or at the very least impractical for general synthesis, especially in comparison to well-developed ionic and transition metal catalyzed processes.
+        </p>
+        <p>
+          The modern era of photoredox catalysis began in the early 2000s with the discovery that photocatalysts that absorb visible light could be used to mediate single-electron-transfer (SET) reactions under mild conditions. Specifically, ruthenium(II) and iridium(III) polypyridyl complexes emerged as especially effective photocatalysts due to their long lasting excited states and ability to absorb visible light efficiently. Studies by David W. C. MacMillan, Tehshik P. Yoon, Corey R. J. Stephenson, and Daniel Nocera demonstrated that these complexes could act as a catalyst for a wide range of synthetic transformations, such as carbon-carbon bond formation and radical cyclizations, using simple light sources such as fluorescent lamps or light-emitting diodes.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-4">[4]</a></sup><sup><a href="#ref-7">[7]</a></sup>
+        </p>
+        <p>
+          In the 2010s, several factors including improved understanding of excited-state electron transfer, the development of new photocatalysts, and the growing appreciation of radical intermediates as versatile synthetic building blocks caused a rapid expansion of photoredox catalysis. Importantly, photoredox catalysis enabled chemists to use very reactive radicals without harsh reagents, high temperatures, or metal reductants, broadening the known range of compatible functional groups. As the field matured, photoredox catalysis evolved from a standalone technique into a powerful platform that could be integrated with other catalytic methods. The emergence of dual catalytic strategies, particularly metallaphotoredox catalysis, further expanded its synthesis capabilities by combining photoredox generated radicals with transition metal guided bond forming processes. Today, photoredox catalysis is recognized as a central tool in modern organic synthesis, with widespread applications in pharmaceutical development, materials science, and polymer chemistry.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-5">[5]</a></sup><sup><a href="#ref-6">[6]</a></sup>
+        </p>
+      </section>
+
+      <section id="principles">
+        <h2>Photophysical Principles</h2>
+        <p>
+          Photoredox catalysis relies on the ability of certain molecules, commonly referred to as photocatalysts, to interact with visible light in a way that alters their chemical properties. When a photocatalyst absorbs a photon, it is promoted from its ground state into an electronically excited state. Although this excited state is typically short lived, it notably alters the redox properties displayed by the molecule.
+        </p>
+        <p>
+          Relative to its ground state, the photoexcited catalyst may behave as a much stronger oxidant, a much stronger reductant, or in some cases, both. This difference allows photoredox systems to participate in single electron transfer (SET) processes with substrates that are usually difficult to deal with under normal conditions, allowing controlled formation of radical intermediates.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup>
+        </p>
+        <p>
+          Electron transfer in photoredox catalysis is often described in two ways. In oxidative quenching, the excited photocatalyst accepts an electron from a donor, reducing the catalyst. In reductive quenching, the excited photocatalyst instead transfers an electron to an acceptor, producing the oxidized catalyst. Subsequent electron transfer steps restore the catalyst to its ground state, continuing the catalytic cycle.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+        <p>
+          Not all photoredox reactions proceed through electron transfer. In some cases, the excited photocatalyst transfers energy directly to the substrate without changing oxidation state. This process, known as energy transfer (EnT), is especially important for specific transformations such as cycloadditions and isomerizations, which rely on the increased reactivity often exhibited by excited state compounds rather than radical ion formation. Energy transfer pathways often involve triplet excited states and provide reactivity that compliments SET mechanisms.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup>
+        </p>
+        <p>
+          The efficiency of these photophysical processes depends on several factors such as the wavelength of light most effectively absorbed by the photocatalyst, the lifetime of its excited state, and the energetic alignment between the catalyst and reacting species. Other reaction conditions like solvent choice, oxygen availability, and light intensity may also play a role. Together, these considerations place photoredox catalysis at the crossroads of photochemistry and redox chemistry, which draws a thin line where relatively small changes in conditions may have a large influence on reaction outcomes.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup>
+        </p>
+      </section>
+
+      <section id="mechanisms">
+        <h2>Mechanistic Pathways</h2>
+        <p>
+          The mechanistic framework of photoredox catalysis is commonly described in terms of catalytic cycles driven by photoinduced electron transfer. In most cases, the catalyst undergoes repeated photoexcitation and relaxation back to its ground state, inducing redox reactions without being consumed. While individual reactions vary significantly, two general mechanistic pathways (oxidative and reductive quenching) are usually used to describe the electron transfer mechanism within these systems.
+        </p>
+
+        <h3>Oxidative Quenching Pathway</h3>
+        <p>
+          In an oxidative quenching cycle, the excited photocatalyst accepts an electron from a donor such as amine or another electron rich substrate. This process generates the reduced photocatalyst along with a radical cation derived from the SET process. The resulting radical species can take place in bond forming reactions, fragmentation, or rearrangement depending on its structure and the reaction conditions, leading to a wide variety of potential products.
+        </p>
+        <p>
+          Following this initial electron transfer, the reduced photocatalyst is returned to its ground state by an external oxidant. This step regenerates the original catalyst completing the catalytic cycle, and allowing the catalyst to participate in another reaction. Oxidative quenching pathways are commonly employed in reactions that rely on carbon radial generation from electron rich precursors.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>Reductive Quenching Pathway</h3>
+        <p>
+          In contrast, a reductive quenching cycle begins with electron donation from the excited photocatalyst to an electron deficient acceptor, such as an activated alkene or an aryl halide. This produces the oxidized catalyst species along with a radical anion derived from SET on the acceptor. Other chemical steps usually follow including bond cleavage or radical addition, converting this intermediate into a reactive radical capable of many more transformations.
+        </p>
+        <p>
+          Similarly to the oxidative pathway, the oxidized photocatalyst is then returned back to its ground state by an external reductant, completing the cycle and restoring catalytic potential. Reductive quenching pathways are widely used in transformations that need the activation of strong bonds like carbon-halogen bonds, which are usually difficult to engage under mild conditions.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>Energy Transfer Mechanisms</h3>
+        <p>
+          As mentioned previously, not all photoredox catalyzed reactions rely on electron transfer. In some cases, the excited catalyst transfers energy directly to a substrate, leaving the oxidation state of both species unchanged. These EnT mechanisms are particularly useful for mechanisms that proceed through excited state intermediates, such as photocycloadditions, isomerizations, and certain pericyclic reactions.
+        </p>
+        <p>
+          Energy transfer pathways often involve triplet excited states, meaning the catalyst is excited to a state with two unpaired electrons which have the same spin state. These states are much more long lived, giving an increased likelihood of desired interactions with nearby substrates.
+        </p>
+        <p>
+          When the energy of the photocatalyst’s triplet excited state closely matches that required to excite the substrate, an energy transfer can occur. This promotes the substrate to its own triplet excited state, where i can participate in reactions mentioned above. Because no net electron transfer is involved, EnT pathways are often used complementary to SET mechanisms, and can operate under less mild conditions where radical ions may be unusable.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup>
+        </p>
+
+        <h3>Integration with Other Catalytic Modes</h3>
+        <p>
+          As the field has developed, photoredox catalysis has increasingly been used in combination with other catalysis methods to enable even more complex transformations. In metallaphotoredox catalysis, for example, photoredox generated radical intermediates are reacted with transition metal catalysts, such as nickel or copper, which allow subsequent, previously inaccessible reactions. This dual method approach has allowed photoredox catalysis to expand beyond simple radical reactions.
+        </p>
+        <p>
+          Across these mechanistic pathways, a common feature is the ability of photoredox catalysts to cut the previously needed tie of redox activation and external energy input (such as heat). By using photoexcitation to control the electron transfer, other methods of catalysis can be used to generate intermediates in a much more flexible environment, previously only accessible under harsh conditions. This opens up compatibility with a much wider range of functional groups.<sup><a href="#ref-6">[6]</a></sup>
+        </p>
+      </section>
+
+      <section id="catalysts">
+        <h2>Classes of Photocatalysts</h2>
+        <p>
+          Photocatalysts used in photoredox chemistry can be broadly grouped based on their composition and photophysical properties. While individual systems vary, effective photocatalysts generally all have the ability to absorb visible light, access long-lived excited states, and participate in reversible redox processes. Over time, several distinct classes of photocatalysts have emerged, which each offer different advantages and limitations.
+        </p>
+
+        <h3>Transition-Metal Photocatalysts</h3>
+        <p>
+          Transition metal complexes, particularly ruthenium(II) and iridium(III), were some of the first widely adopted photocatalysts. Complexes such as tris(2,2′-bipyridine)ruthenium(II) and fac-tris(2-phenylpyridine)iridium(III) absorb visible light efficiently and create relatively long-lived excited states that are well suited for both electron and energy transfer processes.
+        </p>
+        <p>
+          These metal-based photocatalysts are valued for their versatile redox properties, which can be adjusted to favor either oxidative or reductive pathways, usually via simple transformations such as swapping its ligands. Their predictable photophysical behavior and broad range have made them common choices in reactions requiring precise control over redox events. However, concerns related to cost, sustainability, and metal availability have motivated the search for alternative catalyst platforms.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>Organic Photocatalysts</h3>
+        <p>
+          Organic photocatalysts provide a metal-free alternative to transition-metal complexes and have become increasingly popular as they do not suffer from any of the potential concerns that the transition metal catalysts do. This class includes organic dyes such as eosin Y and rose bengal, as well as more complex fluorophores and acridinium salts. Many of these compounds exhibit strong absorption in the visible region and have redox potentials comparable to those of metal-based systems.
+        </p>
+        <p>
+          This class of catalysts is often attractive due to their lower cost and lower environmental concern. Additionally, their modular structures also allow simple fine tuning of electronic properties. On the other hand, many organic photocatalysts have shorter excited state lifetimes compared to metal complexes, but ongoing research is developing systems still capable of supporting a wide range of redox transformations despite a potentially smaller reaction window.<sup><a href="#ref-3">[3]</a></sup>
+        </p>
+
+        <h3>Heterogeneous Catalysts</h3>
+        <p>
+          Heterogeneous materials have also been explored as platforms for photoredox catalysis. Semiconductor materials such as graphitic carbon nitride and metalorganic structures can also absorb visible light and aid charge separation at solid surfaces. These systems offer practical advantages, including catalyst recyclability and compatibility with continuous processes. Heterogenous photocatalysts may present challenges related to surface heterogeneity, but nevertheless they continue to attract interest for potential applications that need scalability and sustainability, such as industrial or more materials oriented contexts.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-6">[6]</a></sup>
+        </p>
+      </section>
+
+      <section id="applications">
+        <h2>Applications in Organic Synthesis</h2>
+        <p>
+          In modern organic synthesis, photoredox catalysis has been widely adopted due to its ability to generate useful reactive intermediates under mild conditions with broad functional group tolerance. By enabling controlled access to radical species just using visible light, photoredox methods have expanded the range of available transformations, particularly in contexts where traditional pathways are incompatible.
+        </p>
+
+        <h3>Carbon–Carbon Bond Formation</h3>
+        <p>
+          One of the most significant applications of photoredox catalysis is in the formation of carbon-carbon bonds through radical pathways. Carbon-carbon bond formation is one of the most vital processes in organic synthesis. Photoinduced SET can generate carbon radicals from a variety of reactants, such as carboxylic acids, halides, or activated esters. These radicals can then add to alkenes, or participate in cross-coupling or cyclization processes.
+        </p>
+        <p>
+          These transformations are especially valuable because they can proceed without the need for strong bases, high temperatures, or non catalytic organometallics. As a result, photoredox catalysis enables C-C bond formation reactions to take place with sensitive functional groups that may have been difficult to protect otherwise.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>C–H Functionalization</h3>
+        <p>
+          Photoredox catalysis has also enabled new approaches to C–H functionalization, particularly at positions that are difficult to activate selectively using conventional methods. Through hydrogen atom transfer (HAT) or radical-mediated pathways, photoredox systems can functionalize benzylic, allylic, or heteroatom-adjacent C–H bonds.
+        </p>
+        <p>
+          These strategies allow for the direct modification of previously considered inert C–H bonds without the need for prefunctionalization, offering much simpler synthetic routes. While control over site selectivity can remain challenging, ongoing developments have improved the predictability of photoredox based C–H functionalization methods.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>Metallaphotoredox Catalysis</h3>
+        <p>
+          As mentioned, a major advance in the application of photoredox catalysis has been its integration with transition metal catalysis, commonly referred to as metallaphotoredox catalysis. In these systems, photoredox catalysis is used to generate radical intermediates which instead of being reacted directly are then intercepted by a metal catalyst to form new bonds.
+        </p>
+        <p>
+          This cooperative approach has enabled cross-coupling reactions between reagents that are difficult to engage using traditional pathways, including combinations of alkyl, aryl, and heteroaryl fragments. Metallaphotoredox catalysis has significantly expanded the range of cross-coupling chemistry and has been found particularly useful in the synthesis of pharmaceutical compounds.<sup><a href="#ref-6">[6]</a></sup>
+        </p>
+
+        <h3>Late Stage Functionalization</h3>
+        <p>
+          Late stage functionalization is the process of complex molecules being modified very late in a synthetic sequence. Traditionally, this causes potential issues as late in the synthesis, the molecule may have a wide range of incompatibilities disallowing many commonly used reaction approaches. The mild reaction conditions characteristic of photoredox catalysts make it well suited for this use.
+        </p>
+        <p>
+          Photoredox methods have been applied to the selective modification of pharmaceuticals, natural products, and biologically active molecules, which all commonly suffer from incompatibility issues. Being able to conduct reactions at more mild conditions than usual allow chemists to apply transformations without extensive resynthesis. Late stage functionalization remains an area of active research, as challenges related to selectivity and competing pathways still exist. Nevertheless, photoredox catalysis has emerged as a valuable tool to diversify synthesis strategies.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-5">[5]</a></sup>
+        </p>
+
+        <h3>Polymer and Materials Chemistry</h3>
+        <p>
+          Beyond small molecule synthesis, photoredox catalysis has also found broad applications in polymer chemistry and materials science. Photoredox systems have been used to initiate and control radical polymerizations, potentially enabling more precise control over molecular weight and polymer structure.
+        </p>
+        <p>
+          In materials contexts, the ability to use light as the external trigger offers much more spatial control over reactivity, which is advantageous for applications such as materials surface modification. These uses show the larger scale impact of photoredox catalysis beyond traditional organic synthetic uses.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup>
+        </p>
+      </section>
+
+      <section id="advantages">
+        <h2>Advantages and Limitations</h2>
+
+        <h3>Advantages</h3>
+        <p>
+          Photoredox catalysis offers several practical advantages that have contributed to its recently growing widespread use across modern organic synthesis.
+        </p>
+        <p>
+          The primary advantage of photoredox catalysis is its ability to operate under mild reaction conditions. The use of visible light as the energy source allows many reactions to proceed closer to room temperature and under relatively neutral conditions. This reduces the need for potentially reagent destroying extreme environments, increasing potential selectivity and yield. This also often correlates with broader functional group tolerance, making photoredox methods compatible with more complex and functionalized molecules.
+        </p>
+        <p>
+          Photoredox catalysis also provides controlled access to radical intermediates, which have traditionally been considered difficult to deal with in synthesis. By generating radicals using photoinduced SET rather than high heat processes, photoredox systems allow radical reactivity to be controlled in a much more predictable and selective manner. This capability has expanded the range of available transformations to synthetic chemists, particularly in scenarios where bond forming is challenging or even impossible using two electron pathways.
+        </p>
+        <p>
+          Another advantage is the flexibility of photoredox catalysis. Photoredox systems can be combined with other traditional catalytic modes. This flexibility unlocks strategies that go through new reaction pathways, and new adaptability in industrial settings.
+        </p>
+
+        <h3>Limitations</h3>
+        <p>
+          Despite these advantages, photoredox catalysis also faces several limitations. Many commonly used photocatalysts, for example the iridium and ruthenium complexes mentioned previously, rely on expensive metals. This raises potential concerns about cost and long term sustainability. Although organic photocatalysts offer alternatives to this problem, their uses differ compared to the metal based ones, and may be unusable depending on the substrate and conditions.
+        </p>
+        <p>
+          Another potential challenge is scalability. Photoredox reactions depend on efficient light absorption, so reactions conducted in sealed reactors may suffer from limited light penetration, leading to lower large-scale efficiency. While continuous flow reactors solve some of these issues, implementation of flow systems can introduce additional complexity and equipment requirements.
+        </p>
+        <p>
+          Photoredox reactions can also be sensitive to oxygen and other quenching agents, which could potentially interfere with the excited state process or radical intermediates. This sensitivity may create a need for even more inert reaction conditions or careful optimization. In addition, competing pathways such as unneeded quenching or side reactions may limit yields and selectivity in certain systems.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-6">[6]</a></sup>
+        </p>
+      </section>
+
+      <section id="see-also">
+        <h2>See also</h2>
+        <ul>
+          <li>Photochemistry</li>
+          <li>Radical reactions in organic synthesis</li>
+          <li>Organocatalysis</li>
+          <li>Transition-metal catalysis</li>
+        </ul>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <ol class="reference">
+          <li id="ref-1">Rehm, D.; Weller, A. <em>Kinetics of Fluorescence Quenching by Electron and H-Atom Transfer</em>. <em>Israel Journal of Chemistry</em>, 1970, 8, 259–271.</li>
+          <li id="ref-2">Prier, C. K.; Rankic, D. A.; MacMillan, D. W. C. <em>Visible Light Photoredox Catalysis with Transition Metal Complexes</em>. <em>Chemical Reviews</em>, 2013, 113, 5322–5363.</li>
+          <li id="ref-3">Romero, N. A.; Nicewicz, D. A. <em>Organic Photoredox Catalysis</em>. <em>Chemical Reviews</em>, 2016, 116, 10075–10166.</li>
+          <li id="ref-4">Yoon, T. P.; Ischay, M. A.; Du, J. <em>Visible Light Photocatalysis as a Greener Approach to Photochemical Synthesis</em>. <em>Nature Chemistry</em>, 2010, 2, 527–532.</li>
+          <li id="ref-5">Shaw, M. H.; Twilton, J.; MacMillan, D. W. C. <em>Photoredox Catalysis in Organic Chemistry</em>. <em>Journal of Organic Chemistry</em>, 2016, 81, 6898–6926.</li>
+          <li id="ref-6">Twilton, J.; et al. <em>The Merger of Photoredox and Transition Metal Catalysis</em>. <em>Nature Reviews Chemistry</em>, 2017, 1, 0052.</li>
+          <li id="ref-7">Nicewicz, D. A.; MacMillan, D. W. C. <em>Science</em>, 2008, 322, 77–80.</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>This page is a student-created, Wikipedia-style educational website.</p>
+  </footer>
+</body>
+</html>
