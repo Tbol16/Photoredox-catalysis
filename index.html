@@ -94,6 +94,74 @@
       margin: 2rem 0;
       padding: 0 1rem;
     }
+    /* --- Wikipedia-style infobox + figures/tables --- */
+.infobox {
+  float: right;
+  width: 290px;
+  margin: 0 0 1rem 1.5rem;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  font-size: 0.92rem;
+}
+.infobox .infobox-title {
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid #a2a9b1;
+  background: #eaecf0;
+}
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.infobox th, .infobox td {
+  padding: 0.35rem 0.5rem;
+  vertical-align: top;
+  border-bottom: 1px solid #c8ccd1;
+}
+.infobox th {
+  width: 42%;
+  text-align: left;
+  font-weight: 600;
+}
+.figure {
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+.figure img, .figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.figcaption {
+  font-size: 0.9rem;
+  color: #202122;
+  margin-top: 0.4rem;
+}
+.wikitable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #a2a9b1;
+  background: #ffffff;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.wikitable th, .wikitable td {
+  border: 1px solid #a2a9b1;
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+.wikitable th {
+  background: #eaecf0;
+  text-align: left;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
   </style>
 </head>
 
@@ -119,6 +187,17 @@
     </nav>
 
     <main>
+      <div class="infobox">
+  <div class="infobox-title">Photoredox catalysis</div>
+  <table>
+    <tr><th>Field</th><td>Organic synthesis, photochemistry</td></tr>
+    <tr><th>Key events</th><td>SET; energy transfer (EnT)</td></tr>
+    <tr><th>Energy input</th><td>Visible light (LEDs, lamps)</td></tr>
+    <tr><th>Common photocatalysts</th><td>Ru/Ir polypyridyl; dyes; heterogeneous semiconductors</td></tr>
+    <tr><th>Typical intermediates</th><td>Radicals, radical ions</td></tr>
+    <tr><th>Notable mode</th><td>Metallaphotoredox (dual catalysis)</td></tr>
+  </table>
+</div>
       <section id="overview">
         <h2>Overview</h2>
         <p>
@@ -145,6 +224,53 @@
         <p>
           Photoredox catalysis relies on the ability of certain molecules, commonly referred to as photocatalysts, to interact with visible light in a way that alters their chemical properties. When a photocatalyst absorbs a photon, it is promoted from its ground state into an electronically excited state. Although this excited state is typically short lived, it notably alters the redox properties displayed by the molecule.
         </p>
+        <div class="figure">
+  <svg viewBox="0 0 900 360" role="img" aria-label="Simplified photoredox catalytic cycle diagram" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="898" height="358" fill="white" stroke="#a2a9b1"/>
+    <text x="450" y="42" text-anchor="middle" font-size="22" font-family="Arial">Simplified photoredox catalytic cycle</text>
+
+    <!-- Nodes -->
+    <circle cx="180" cy="180" r="52" fill="#eaecf0" stroke="#a2a9b1"/>
+    <text x="180" y="185" text-anchor="middle" font-size="18" font-family="Arial">PC</text>
+
+    <circle cx="450" cy="100" r="52" fill="#eaecf0" stroke="#a2a9b1"/>
+    <text x="450" y="105" text-anchor="middle" font-size="18" font-family="Arial">PC*</text>
+
+    <circle cx="720" cy="180" r="52" fill="#eaecf0" stroke="#a2a9b1"/>
+    <text x="720" y="175" text-anchor="middle" font-size="16" font-family="Arial">PC•−</text>
+    <text x="720" y="198" text-anchor="middle" font-size="16" font-family="Arial">or PC•+</text>
+
+    <circle cx="450" cy="260" r="52" fill="#eaecf0" stroke="#a2a9b1"/>
+    <text x="450" y="265" text-anchor="middle" font-size="18" font-family="Arial">PC</text>
+
+    <!-- Arrows -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L10,3 L0,6 Z" fill="#202122"/>
+      </marker>
+    </defs>
+
+    <line x1="215" y1="150" x2="405" y2="120" stroke="#202122" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="310" y="118" text-anchor="middle" font-size="14" font-family="Arial">hν (visible)</text>
+
+    <line x1="495" y1="120" x2="675" y2="150" stroke="#202122" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="585" y="118" text-anchor="middle" font-size="14" font-family="Arial">SET or EnT</text>
+
+    <line x1="690" y1="220" x2="485" y2="250" stroke="#202122" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="590" y="268" text-anchor="middle" font-size="14" font-family="Arial">regeneration</text>
+
+    <line x1="415" y1="250" x2="215" y2="210" stroke="#202122" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- Side notes -->
+    <text x="60" y="320" font-size="13" font-family="Arial">PC = photocatalyst (ground state); PC* = excited state</text>
+    <text x="60" y="340" font-size="13" font-family="Arial">SET = single-electron transfer; EnT = energy transfer</text>
+  </svg>
+
+  <div class="figcaption">
+    <b>Figure 1.</b> Simplified photoredox catalytic cycle showing photoexcitation (PC → PC*) and subsequent SET/EnT events followed by catalyst regeneration.
+  </div>
+</div>
+
         <p>
           Relative to its ground state, the photoexcited catalyst may behave as a much stronger oxidant, a much stronger reductant, or in some cases, both. This difference allows photoredox systems to participate in single electron transfer (SET) processes with substrates that are usually difficult to deal with under normal conditions, allowing controlled formation of radical intermediates.<sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup>
         </p>
@@ -206,6 +332,39 @@
         <p>
           Photocatalysts used in photoredox chemistry can be broadly grouped based on their composition and photophysical properties. While individual systems vary, effective photocatalysts generally all have the ability to absorb visible light, access long-lived excited states, and participate in reversible redox processes. Over time, several distinct classes of photocatalysts have emerged, which each offer different advantages and limitations.
         </p>
+        <table class="wikitable">
+  <caption style="caption-side: bottom; padding: 0.4rem 0; font-size: 0.9rem;">
+    <b>Table 1.</b> Representative catalyst classes used in photoredox catalysis and typical considerations.
+  </caption>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Examples</th>
+      <th>Strengths</th>
+      <th>Limitations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transition-metal complexes</td>
+      <td>Ru(bpy)<sub>3</sub><sup>2+</sup>, Ir(ppy)<sub>3</sub></td>
+      <td>Long-lived excited states; broad redox windows; reliable photophysics</td>
+      <td>Cost; sustainability/availability concerns</td>
+    </tr>
+    <tr>
+      <td>Organic photocatalysts</td>
+      <td>Eosin Y, rose bengal, acridinium salts</td>
+      <td>Metal-free; tunable structures; often lower cost</td>
+      <td>Sometimes shorter excited-state lifetimes; narrower “window” for some substrates</td>
+    </tr>
+    <tr>
+      <td>Heterogeneous materials</td>
+      <td>g-C<sub>3</sub>N<sub>4</sub>, MOFs/semiconductors</td>
+      <td>Recyclable; potential scalability; continuous processing compatibility</td>
+      <td>Surface heterogeneity; mass transfer/light penetration issues</td>
+    </tr>
+  </tbody>
+</table>
 
         <h3>Transition-Metal Photocatalysts</h3>
         <p>
